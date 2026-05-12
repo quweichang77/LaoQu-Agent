@@ -1,1 +1,7 @@
-
+openai
+ccxt
+pandas
+numpy
+fastapi
+uvicorn
+python-dotenv
