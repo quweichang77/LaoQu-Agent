@@ -34,3 +34,9 @@ Open-source AI infrastructure for quantitative trading automation, strategy orch
 ## License
 
 MIT License
+
+## Current Status
+
+This project is currently in early open-source development.
+
+Contributions, ideas, and community feedback are welcome.
