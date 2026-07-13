@@ -1,23 +1,27 @@
 # AGENTS.md
 
-## Project Rules
+本文件约定在本仓库内协作的规则。本项目是独立仓库，禁止引入或混用其他历史项目代码。
 
-- Use modular architecture
-- Prioritize security and risk management
-- Follow Python best practices
-- Keep strategies isolated
-- Use async execution when possible
-- Validate exchange responses before execution
-- Maintain reproducible workflows
+## 隔离铁律
 
-## Testing
+- 禁止从 `laoqu_v38*`、用户主目录零散脚本、WorkBuddy 等旧项目复制业务代码
+- 禁止硬编码密钥；密钥只放在 `.env`（已加入 `.gitignore`）
+- 依赖只通过 `requirements.txt` / `pyproject.toml` 声明
 
-Run:
+## 架构原则
 
+- 代码放在 `src/laoqu_agent/` 包内
+- 模块职责清晰，便于扩展
+- Python 3.11+，优先类型注解
+- 改动保持可测试、可回滚
+
+## 测试
+
+```bash
 pytest
+```
 
-## Code Style
+## 提交
 
-- Python 3.11+
-- Type hints preferred
-- Avoid hardcoded secrets
+- 提交信息说明「改了什么、为什么」
+- 不提交 `.env`、密钥、本地缓存

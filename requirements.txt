@@ -1,7 +1,2 @@
-openai
-ccxt
-pandas
-numpy
-fastapi
-uvicorn
-python-dotenv
+python-dotenv>=1.0.0
+pytest>=8.0.0
